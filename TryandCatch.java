@@ -1,0 +1,48 @@
+package TryandCatch;
+
+public class TryandCatch {
+
+	//public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		public class JavaHungry {
+		    public static void main(String args[])
+		    {
+		        try
+		        {
+		            System.out.print("A");
+		            throw new Exception();
+		        }
+		        catch (Exception e)
+		        {
+		            try
+		            {
+		                try 
+		                {
+		                    throw new Exception();
+		                }
+		                catch (Exception ex) 
+		                {
+		                    System.out.print("B");
+		                }
+		                throw new Exception();
+		            }
+		            catch (Exception exc)
+		            {
+		                System.out.print("C");
+		            }
+		            finally
+		            {
+		                System.out.print("D");
+		            }
+		        }
+		        finally
+		        {
+		            System.out.print("E");
+		        }
+		        System.out.print("F");
+		    }
+		}
+
+	}
+
+//}
